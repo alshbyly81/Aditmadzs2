@@ -1389,7 +1389,8 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage = help()
                                aditmadzs.sendMessage(msg.to, str(helpMessage))
-                                                                                       
+                               aditmadzs.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                                       
                         if cmd == "self on":
                             if msg._from in admin:
                                 wait["selfbot"] = True
@@ -1405,19 +1406,22 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage1 = helpbot()
                                aditmadzs.sendMessage(msg.to, str(helpMessage1))
-                               
+                               aditmadzs.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                        
                         elif cmd == "meme":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage2 = infomeme()
                                aditmadzs.sendMessage(msg.to, str(helpMessage2))
-                               
+                               aditmadzs.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                        
                         elif cmd == "translate":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpTranslate = translate()
                                aditmadzs.sendMessage(msg.to, str(helpTranslate))                               
-                               
+                               aditmadzs.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                        
                         if cmd == "unsend on":
                             if msg._from in admin:
                                 wait["unsend"] = True
@@ -1471,7 +1475,8 @@ def bot(op):
                                 if msg.to in protectinvite: md+="┃┃🍁 ✔️ Protectinvite「ON」\n"
                                 else: md+="┃┃🍁 ✖ Protectinvite「OFF」\n"                                                
                                 aditmadzs.sendMessage(msg.to, md+"┃┣━━━━━━━━━━━\n┃┃❧ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃┃❧ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n┗━━━━━━━━━━━━")
-                                
+                                aditmadzs.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                        
                         elif cmd == "status translate":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -1571,7 +1576,7 @@ def bot(op):
                                pesan = text.replace(sep[0] + " ","")
                                saya = aditmadzs.getGroupIdsJoined()
                                for group in saya:
-                                   aditmadzs.sendMessage(group,"=======[BROADCAST]=======\n\n"+pesan+"\n\nCreator : line.me/ti/p/~adit_cmct")
+                                   aditmadzs.sendMessage(group,"=======[BROADCAST]=======\n\n"+pesan+"\n\nCreator : line.me/ti/p/~max_pv")
 
                         elif text.lower() == "mykey":
                           if wait["selfbot"] == True:
@@ -1960,7 +1965,7 @@ def bot(op):
                             if msg._from in admin:
                                 ki.sendMessage(msg.to,responsename1)
 
-                        elif cmd == "assist join":
+                        elif cmd == "invitebot":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
