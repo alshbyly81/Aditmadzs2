@@ -825,6 +825,7 @@ def bot(op):
                         pass
                     else:
                         aditmadzs.sendMessage(op.param1, wait["message"])
+                        aditmadzs.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
 
 #===========KICK============#
         if op.type == 19:
@@ -1432,7 +1433,7 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "  ┏━━━━━━━━━━━━━━━━━\n┃┃          🐚 S T A T U S 🐚\n┃┣━━━━━━━━━━━━━━━━━━━━\n"
+                                md = "  ┏━━━━━━━\n┃┃ 🐚 S T A T U S 🐚\n┃┣━━━━━━━\n"
                                 if wait["unsend"] == True: md+="┃┃🍁 ✔️ Unsend「ON」\n"
                                 else: md+="┃┃🍁 ✖ Unsend「OFF」\n"                                
                                 if wait["sticker"] == True: md+="┃┃🍁 ✔️ Sticker「ON」\n"
@@ -1469,14 +1470,14 @@ def bot(op):
                                 else: md+="┃┃🍁 ✖ Protectcancel「OFF」\n"
                                 if msg.to in protectinvite: md+="┃┃🍁 ✔️ Protectinvite「ON」\n"
                                 else: md+="┃┃🍁 ✖ Protectinvite「OFF」\n"                                                
-                                aditmadzs.sendMessage(msg.to, md+"┃┣━━━━━━━━━━━━━━━━━━━━\n┃┃❧ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃┃❧ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n  ┗━━━━━━━━━━━━━━━━━")
+                                aditmadzs.sendMessage(msg.to, md+"┃┣━━━━━━━\n┃┃❧ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃┃❧ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n  ┗━━━━━━━")
                                 
                         elif cmd == "status translate":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "  ┏━━━━━━━━━━━━━━━━━\n┃┃ 🐚 STATUS TRANSLATE 🐚\n┃┣━━━━━━━━━━━━━━━━━━━━\n"
+                                md = "  ┏━━━━━━━\n┃┃ 🐚 STATUS TRANSLATE 🐚\n┃┣━━━━━━━\n"
                                 if msg.to in translateen: md+="┃┃🍁 ✔️ English「ON」\n"
                                 else: md+="┃┃🍁 ✖ English「OFF」\n"
                                 if msg.to in translateid: md+="┃┃🍁 ✔️ Indonesia「ON」\n"
@@ -1487,7 +1488,7 @@ def bot(op):
                                 else: md+="┃┃🍁 ✖ Taiwan「OFF」\n"
                                 if msg.to in translatear: md+="┃┃🍁 ✔️ Arab「ON」\n"
                                 else: md+="┃┃🍁 ✖ Arab「OFF」\n"       
-                                aditmadzs.sendMessage(msg.to, md+"┃┣━━━━━━━━━━━━━━━━━━━━\n┃┃❧ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃┃❧ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n  ┗━━━━━━━━━━━━━━━━━")                                
+                                aditmadzs.sendMessage(msg.to, md+"┃┣━━━━━━━\n┃┃❧ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃┃❧ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n  ┗━━━━━━━")                                
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
