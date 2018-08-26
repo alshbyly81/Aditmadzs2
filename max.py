@@ -362,8 +362,8 @@ def help():
                   "╠❂➣ " + key + "Speed/Sp\n" + \
                   "╠❂➣ " + key + "Sprespon\n" + \
                   "╠❂➣ " + key + "Tagall\n" + \
-                  "╠❂➣ " + key + "join dit\n" + \
-                  "╠❂➣ " + key + "Assist join\n" + \
+                  "╠❂➣ " + key + "join\n" + \
+                  "╠❂➣ " + key + "bot1 join\n" + \
                   "╠❂➣ " + key + "Ginfo\n" + \
                   "╠❂➣ " + key + "Open\n" + \
                   "╠❂➣ " + key + "Close\n" + \
